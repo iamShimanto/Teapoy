@@ -1,0 +1,134 @@
+/* ================== all links start ==================== */
+
+/* ================== all links end ==================== */
+
+/* =================== common css part start ============ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+:root{
+    --brand_color : #DD7210;
+}
+
+
+
+
+/* =================== common css part end ============ */
+
+/* ================== navbar start ================ */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding:  20px;
+}
+.navbar ul li {
+    padding: 0 20px;
+}
+.navbar ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: var(--brand_color);   
+}
+.search, .heart, .rotate, .cart, .login{
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.search:hover{
+    color: var(--brand_color);
+}
+.heart:hover{
+    color: var(--brand_color);
+}
+.rotate:hover{
+    color: var(--brand_color);
+}
+.cart:hover{
+    color: var(--brand_color);
+}
+.login:hover{
+    color: var(--brand_color);
+}
+
+/* ================== navbar end ================ */
+/* ================== banner start ================ */
+#banner .contain{
+    padding: 0 ;
+    margin: 0 ;
+}
+#banner img{
+    height: 100vh;
+}
+
+.custom-prev{
+    width: 60px;
+    height: 60px;
+    background-color: var(--brand_color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 999;
+    border: none;
+} 
+.custom-prev:hover{
+    background-color: white;
+    color: black;
+}
+.custom-next{
+    width: 60px;
+    height: 60px;
+    background-color: var(--brand_color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 999;
+    border: none;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================== banner end ================ */
+
