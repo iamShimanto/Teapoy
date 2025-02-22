@@ -1,5 +1,5 @@
 /* ================== all links start ==================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* ================== all links end ==================== */
 
 /* =================== common css part start ============ */
@@ -22,8 +22,13 @@ img{
 }
 :root{
     --brand_color : #DD7210;
+    --second_color :#A9A9A9;
+    --moolish :  "Mulish", serif;
+    --marcellus :  "Marcellus", serif;
 }
-
+section{
+    overflow: hidden;
+}
 
 
 
@@ -68,16 +73,24 @@ img{
 .login:hover{
     color: var(--brand_color);
 }
-
+.navbar-nav{
+    text-align: center;
+    margin-top: 30px;
+}
+.navbar-nav li{
+    margin: 10px 0;
+}
+.navbar_icons{
+    text-align: center;
+}
 /* ================== navbar end ================ */
 /* ================== banner start ================ */
 #banner .contain{
     padding: 0 ;
     margin: 0 ;
+    cursor: pointer;
 }
-#banner img{
-    height: 100vh;
-}
+
 
 .custom-prev{
     width: 60px;
@@ -90,9 +103,10 @@ img{
     padding-bottom: 3px;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 4%;
     z-index: 999;
     border: none;
+    transition: ease-in-out .3s;
 } 
 .custom-prev:hover{
     background-color: white;
@@ -105,30 +119,229 @@ img{
     border-radius: 50%;
     font-size: 20px;
     color: white;
-    padding-right: 5px;
     padding-bottom: 3px;
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 4%;
     z-index: 999;
     border: none;
+    transition: ease-in-out .3s;
 }   
+.custom-next:hover{
+    background-color: white;
+    color: black;
+}
+.single_banner1{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.single_banner2{
+    background-image: url(../images/banner1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.single_banner3{
+    background-image: url(../images/banner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#banner .text h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--brand_color);
+    line-height: 30px;
+    text-align: center;
+    margin-top: 220px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#banner .text h1{
+    font-size: 56px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    line-height: 67px;
+    text-align: center;
+    margin: 15px 0;
+}
+#banner .text p{
+    max-width: 750px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: white;
+    line-height: 26px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 35px;
+}
+#banner .text a{
+    width: 188px;
+    height: 54px;
+    background-color: var(--brand_color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 5.8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--moolish);
+    margin: auto;
+    transition: ease-in-out .3s;
+}
+#banner .text a div{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .3s;
+}
+#banner .text a:hover{
+    background-color: white;
+    color: black;
+}
+#banner .text a:hover div{
+    background-color: var(--brand_color);
+    color: white;
+}
 /* ================== banner end ================ */
+/* ================== home decor start ================ */
+#home_decor{
+    padding: 128px 0;
+    background-color: black;
+}
+#home_decor .left_side h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--brand_color);
+    line-height: 29px;
+    margin-bottom: 19.2px;
+    margin-top: 19px;
+}
+
+#home_decor .left_side h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    line-height: 57.6px;
+}
+
+#home_decor .left_side p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--second_color);
+    line-height: 26px;
+    margin: 19.2px 0 73.05px;
+}
+#home_decor .left_side img{
+    border-radius: 10px;
+}
+#home_decor .right_side img{
+    border-radius: 10px;
+}
+#home_decor .right_side h3{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    line-height: 36px;
+    margin: 20px 0;
+}
+#home_decor .right_side p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--second_color);
+    line-height: 26px;
+    margin-bottom: 43px;
+}
+#home_decor .right_side .bottom_text{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+#home_decor .right_side .bottom_text p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--second_color);
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+@media (max-width: 991.98px) {
+    #home_decor .right_side{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #home_decor .right_side h3{
+        margin-top: 40px;
+    }
+    #home_decor .right_side img{
+        margin-top: 30px;
+    }
+ }
+
+ 
+/* ================== home decor end ================ */
+/* ================== furniture start ================ */
+
+#furniture{
+    background-image: url(../images/sofa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 40px;
+    transition: ease-in-out .5s;
+}
+#furniture .text{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 85px;
+    justify-content: space-around;
+    
+}
+#furniture h2{
+    font-size: 43px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: var(--second_color);
+    line-height: 64px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+    transition: all linear .3s;
+}
+#furniture h2:hover{
+    color: white;
+}
+#furniture h2 .icons{
+    transition: all linear .3s;
+}
+#furniture h2:hover .icons{
+    color: var(--brand_color);
+}
+/* ================== furniture end ================ */
 
