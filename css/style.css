@@ -311,13 +311,12 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px 40px;
+    padding: 120px 40px;
     transition: ease-in-out .3s;
 }
 #furniture .text{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 85px;
     justify-content: space-around;
     
 }
@@ -375,7 +374,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
 }
 #collection .heading .button button{
     border: none;
