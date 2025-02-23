@@ -312,7 +312,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 40px;
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
 #furniture .text{
     display: flex;
