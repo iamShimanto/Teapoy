@@ -1,7 +1,31 @@
+// =========== banner part staty 
+
 $('.main_banner').slick({
     prevArrow: '<button class="custom-prev">❮</button>',
         nextArrow: '<button class="custom-next">❯</button>'
 });
+
+// =========== banner dom 
+
+const banner = document.querySelector("#banner")
+const customPrev = document.querySelector(".custom-prev")
+const customNext = document.querySelector(".custom-next")
+
+// ============ function part 
+
+banner.addEventListener("mouseenter", ()=>{
+    customPrev.style = "transform : translateX(10px)"
+})
+banner.addEventListener("mouseleave", ()=>{
+    customPrev.style = "transform : translateX(0px)"
+})
+
+banner.addEventListener("mouseenter", ()=>{
+    customNext.style = "transform : translateX(-10px)"
+})
+banner.addEventListener("mouseleave", ()=>{
+    customNext.style = "transform : translateX(0px)"
+})
 
 // =========== furniture part start 
 
@@ -16,6 +40,8 @@ const single_card5 = document.querySelector('.single_card5')
 const single_card6 = document.querySelector('.single_card6')
 const single_card7 = document.querySelector('.single_card7')
 const furniture    = document.querySelector("#furniture")
+
+// ============ banner part end
 
 
 // ============= function part =============
@@ -77,3 +103,35 @@ single_card7.addEventListener("mouseleave", function() {
 });
 
 // ============= furniture function part =============
+
+// ============== collection part start =============
+
+$('.coll_main_card').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow : false,
+    nextArrow : false,
+  });
+
+
+//   ============ collection dom
+
+const homeColl = document.querySelector("#homeColl")
+const officeColl = document.querySelector("#officeColl")
+const collectionBtnHome = document.querySelector("#collectionBtnHome")
+const collectionBtnOffice = document.querySelector("#collectionBtnOffice")
+const collectionBtnIndoor = document.querySelector("#collectionBtnIndoor")
+const collectionBtnOutdoor = document.querySelector("#collectionBtnOutdoor")
+
+// =========== function part 
+
+collectionBtnOffice.addEventListener("click", ()=>{
+    officeColl.style = "visibility : visible ; opacity :1 ; top: 0;"
+    homeColl.style.display = "none"
+})
+collectionBtnHome.addEventListener("click", ()=>{
+    officeColl.style = "display: none;"
+    homeColl.style.display = "block"
+})

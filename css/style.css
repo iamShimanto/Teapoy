@@ -344,4 +344,112 @@ section{
     color: var(--brand_color);
 }
 /* ================== furniture end ================ */
+/* ================== collection start ================ */
+
+#collection{
+    padding: 152px 40px 70px;
+    background-color: #2B2B2B;
+    position: relative;
+}
+#collection .heading h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--brand_color);
+    line-height: 29px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    margin: 17px 0;
+}
+#collection .heading h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#collection .heading .button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#collection .heading .button button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    transition: all linear .3s;
+    margin-bottom: 50px;
+    position: relative;
+}
+#collection .heading .button button:hover{
+    color: var(--brand_color);
+}
+#collection .heading .button button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--brand_color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all linear .3s;
+}
+#collection .heading .button button:hover:after{
+    width: 100%;
+}
+#collection .coll_main_card .single_card{
+    margin: 0 15px;
+    cursor: pointer;
+}
+#collection .coll_main_card .single_card img{
+    border-radius: 10px;
+}
+#collection .coll_main_card .single_card h5{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: var(--second_color);
+    line-height: 23px;
+    margin-top: 10px;
+    text-align: center;
+}
+#collection .coll_main_card .single_card a{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--marcellus);
+    color: white;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collection .coll_main_card .single_card p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--moolish);
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================== collection end ================ */
 
