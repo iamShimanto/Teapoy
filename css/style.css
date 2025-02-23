@@ -375,7 +375,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 #collection .heading .button button{
     border: none;
@@ -411,6 +411,10 @@ section{
 }
 #collection .coll_main_card .single_card img{
     border-radius: 10px;
+    transition: ease-in-out .3s;
+}
+#collection .coll_main_card .single_card:hover img{
+    transform: scale(1.03);
 }
 #collection .coll_main_card .single_card h5{
     font-size: 14px;
@@ -430,6 +434,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease-in-out .3s;
+}
+#collection .coll_main_card .single_card a:hover{
+    color: var(--brand_color);
 }
 #collection .coll_main_card .single_card p{
     font-size: 16px;
@@ -439,7 +447,18 @@ section{
     text-align: center;
     margin-bottom: 30px;
 }
-
+#officeColl{
+    visibility: hidden;
+    opacity: 0;
+}
+#indoorColl{
+    visibility: hidden;
+    opacity: 0;
+}
+#outdoorColl{
+    visibility: hidden;
+    opacity: 0;
+}
 
 
 

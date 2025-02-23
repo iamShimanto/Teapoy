@@ -1,8 +1,11 @@
+// =========== main body dom
+const mainBody = document.querySelector("#mainBody")
+
 // =========== banner part staty 
 
 $('.main_banner').slick({
     prevArrow: '<button class="custom-prev">❮</button>',
-        nextArrow: '<button class="custom-next">❯</button>'
+    nextArrow: '<button class="custom-next">❯</button>',
 });
 
 // =========== banner dom 
@@ -109,8 +112,7 @@ single_card7.addEventListener("mouseleave", function() {
 $('.coll_main_card').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
     prevArrow : false,
     nextArrow : false,
   });
@@ -120,18 +122,48 @@ $('.coll_main_card').slick({
 
 const homeColl = document.querySelector("#homeColl")
 const officeColl = document.querySelector("#officeColl")
+const indoorColl = document.querySelector("#indoorColl")
+const outdoorColl = document.querySelector("#outdoorColl")
 const collectionBtnHome = document.querySelector("#collectionBtnHome")
 const collectionBtnOffice = document.querySelector("#collectionBtnOffice")
 const collectionBtnIndoor = document.querySelector("#collectionBtnIndoor")
 const collectionBtnOutdoor = document.querySelector("#collectionBtnOutdoor")
 
+
+
 // =========== function part 
 
 collectionBtnOffice.addEventListener("click", ()=>{
-    officeColl.style = "visibility : visible ; opacity :1 ; top: 0;"
+    officeColl.style = "visibility : visible ; opacity :1 ; top: 0; transform: scale(1);"
     homeColl.style.display = "none"
+    indoorColl.style.display = "none"
+    outdoorColl.style.display = "none"
+})
+
+collectionBtnIndoor.addEventListener("click", ()=>{
+    indoorColl.style = "visibility : visible ; opacity :1 ; top: 0px ;"
+    homeColl.style.display = "none"
+    officeColl.style.display = "none"
+    outdoorColl.style.display = "none"
+})
+
+collectionBtnOutdoor.addEventListener("click", ()=>{
+    outdoorColl.style = "visibility : visible ; opacity :1 ; top: 0px;"
+    homeColl.style.display = "none"
+    officeColl.style.display = "none"
+    indoorColl.style.display = "none"
 })
 collectionBtnHome.addEventListener("click", ()=>{
-    officeColl.style = "display: none;"
+    indoorColl.style = "display: none;"
+    outdoorColl.style = "display: none;"
     homeColl.style.display = "block"
+    officeColl.style = "display: none;"
 })
+
+mainBody.addEventListener("mouseenter", ()=>{
+    indoorColl.style = "display: none;"
+    outdoorColl.style = "display: none;"
+    homeColl.style.display = "block"
+    officeColl.style = "display: none;"
+})
+
